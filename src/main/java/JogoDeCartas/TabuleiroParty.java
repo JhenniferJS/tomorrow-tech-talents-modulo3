@@ -5,14 +5,14 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 public class TabuleiroParty implements Tabuleiros {
-    ArrayList<ArrayList<Cartas>> cartas;
-    ArrayList<Cartas> deck1;
-    ArrayList<Cartas> deck2;
-    ArrayList<Cartas> deck3;
-    ArrayList<Cartas> deck4;
-    ArrayList<Cartas> deck5;
-    int maxAtaque = 34;
-    int cont = 0;
+    private ArrayList<ArrayList<Cartas>> cartas;
+    private ArrayList<Cartas> deck1;
+    private ArrayList<Cartas> deck2;
+    private ArrayList<Cartas> deck3;
+    private ArrayList<Cartas> deck4;
+    private ArrayList<Cartas> deck5;
+    private int maxAtaque = 34;
+    private static int cont = 0;
 
     public TabuleiroParty(ArrayList<Cartas> deck1, ArrayList<Cartas> deck2, ArrayList<Cartas> deck3, ArrayList<Cartas> deck4, ArrayList<Cartas> deck5) {
         this.inserirDeck(deck1);

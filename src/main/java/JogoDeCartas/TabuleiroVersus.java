@@ -5,14 +5,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 public class TabuleiroVersus implements Tabuleiros{
-    ArrayList<ArrayList<Cartas>> cartas;
-    ArrayList<Cartas> deck1;
-    ArrayList<Cartas> deck2;
-
-    int maxAtaque = 10;
-    int maxAtaqueEspecial = 4;
-    int contAtaque = 0;
-    int contAtaqueEspecial = 0;
+    private ArrayList<ArrayList<Cartas>> cartas;
+    private ArrayList<Cartas> deck1;
+    private ArrayList<Cartas> deck2;
+    private int maxAtaque = 10;
+    private int maxAtaqueEspecial = 4;
+    private static int contAtaque = 0;
+    private static int contAtaqueEspecial = 0;
 
     public TabuleiroVersus(ArrayList<Cartas> deck1, ArrayList<Cartas> deck2) {
         this.inserirDeck(deck1);
